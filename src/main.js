@@ -29,9 +29,14 @@ form.addEventListener('submit', async (e) => {
     const data = await fetchImages(currentQuery, currentPage, perPage);
     if (data.hits.length === 0) {
       showError('Sorry, there are no images matching your search query. Please try again!');
+      loadMoreBtn.classList.add('hidden');
     } else {
       renderImages(data.hits);
-      loadMoreBtn.classList.remove('hidden');
+      if (data.hits.length < perPage) {
+        loadMoreBtn.classList.add('hidden');
+      } else {
+        loadMoreBtn.classList.remove('hidden');
+      }
     }
   } catch (error) {
     showError('An error occurred while fetching images.');
@@ -46,13 +51,14 @@ loadMoreBtn.addEventListener('click', async () => {
 
   try {
     const data = await fetchImages(currentQuery, currentPage, perPage);
-    if (data.hits.length === 0) {
+
+    if (data.hits.length === 0 || data.hits.length < perPage) {
       loadMoreBtn.classList.add('hidden');
       showError("We're sorry, but you've reached the end of search results.");
-    } else {
-      renderImages(data.hits);
-      smoothScroll();
     }
+
+    renderImages(data.hits);
+    smoothScroll();
   } catch (error) {
     showError('An error occurred while fetching more images.');
   } finally {
@@ -61,7 +67,7 @@ loadMoreBtn.addEventListener('click', async () => {
 });
 
 function smoothScroll() {
-  const cardHeight = document.querySelector('.gallery li').getBoundingClientRect().height;
+  const cardHeight = document.querySelector('.gallery li')?.getBoundingClientRect()?.height || 0;
   window.scrollBy({
     top: cardHeight * 2,
     behavior: 'smooth',

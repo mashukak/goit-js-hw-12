@@ -44,6 +44,8 @@ export function showError(message) {
   iziToast.error({
     title: 'Error',
     message,
+    timeout: 5000,
+    position: 'topRight',
   });
 }
 
