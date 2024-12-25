@@ -7,15 +7,166 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <form id="search-form">
-      <input type="text" id="search-input" placeholder="Search images..." autocomplete="off" />
-      <button type="submit">Search</button>
-    </form>
-    <ul id="gallery" class="gallery"></ul>
-    <button class="load-more hidden" id="load-more-btn">Load more</button>
-    <div id="loading" class="hidden">Loading images, please wait...</div>
-  </div>
+  <section class="section-about-me">
+    <div class="introduction-about-me ">
+      <div class="text-block-about-me ">
+        <h2>I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND <span class="functional">FUNCTIONAL</span>
+          <span class="websites">WEBSITES</span> THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.</h2>
+      </div>
+      <div class="image-block-about-me ">
+        <img src="../img/About-me/img.bg-about.me.jpg" alt="Lloyd Jefferson" />
+      </div>
+    </div>
+    <div class="section-about-me">
+      <h1 class="visually-hidden">About Me</h1>
+  
+      <div class="about-me">
+        <div class="about-me-item">
+          <div class="about-me-click" onclick="toggleAboutMe(this)">
+            ABOUT ME
+            <span class="arrow-container-about-me ">
+              <span class="arrow-about-me "></span>
+            </span>
+          </div>
+          <div class="about-me-content">
+            <ul class="about-me-list">
+              <li>I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an
+                understanding of different programming languages ​​and technologies, always ready to improve my skills. I
+                always follow the latest trends and look for unconventional, creative solutions to problems. I have a high
+                level of analytical skills and am able to effectively solve even the most difficult tasks encountered on
+                the way.</li>
+              <li>Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging
+                ideas and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and
+                stressful situations, while maintaining a high quality of work. I am always looking for opportunities for
+                self-improvement. I actively study new technologies and practices to stay abreast of the latest
+                innovations. I have a strong understanding of various programming languages, frameworks and architectural
+                concepts that allow me to create efficient and scalable software.</li>
+            </ul>
+          </div>
+  
+          <div class="about-me">
+            <div class="about-me-item">
+              <div class="about-me-click" onclick="toggleAboutMe(this)">
+                ROLE
+                <span class="arrow-container-about-me ">
+                  <span class="arrow-about-me "></span>
+                </span>
+              </div>
+              <div class="about-me-content">
+                <ul class="about-me-list">
+                  <li>Frontend development</li>
+                  <li>Headless CMS, WordPress</li>
+                  <li>Blender (enjoy)</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="about-me">
+              <div class="about-me-item">
+                <div class="about-me-click" onclick="toggleAboutMe(this)">
+                  EDUCATION
+                  <span class="arrow-container-about-me ">
+                    <span class="arrow-about-me "></span>
+                  </span>
+                </div>
+                <div class="about-me-content">
+                  <ul class="about-me-list-education">
+                    <li>2018 - 2019: Frontend Development Diploma, GoIT
+                      School New York</li>
+                    <li>2019 - 2020: Advanced Web Development Certificate, GoIT School, New York</li>
+                    <li>2020 - 2022: Advanced Blender Animation Techniques, Udemy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="skills-container-about-me ">
+              <div class="swiper-about-me ">
+                <ul class="swiper-wrapper-about-me ">
+                  <li class="swiper-slide bubble html-css">HTML/CSS</li>
+                  <li class="swiper-slide bubble javascript">JavaScript</li>
+                  <li class="swiper-slide bubble react">React</li>
+                  <li class="swiper-slide bubble nodejs">Node.js</li>
+                  <li class="swiper-slide bubble react-native">React Native</li>
+                  <li class="swiper-slide bubble soft-skills">Soft Skills</li>
+                </ul>
+                <div class="swiper-button-next-about-me "></div>
+              </div>
+            </div>
+            =======
+            <section id="about-me" class="section-about-me">
+              <div class="container-about-me ">
+                <h1 class="visually-hidden">About Me</h1>
+  
+                <div class="about-me">
+                  <div class="about-me-item">
+                    <div class="about-me-click" onclick="toggleAboutMe(this)">
+                      ABOUT ME
+                      <span class="arrow-container-about-me ">
+                        <span class="arrow-about-me "></span>
+                      </span>
+                    </div>
+                    <div class="about-me-content">
+                      <ul class="about-me-list">
+                        <li>I am Lloyd Jefferson, a talented programmer with extensive expertise in software development.
+                          I have an
+                          understanding of different programming languages ​​and technologies, always ready to improve my
+                          skills. I
+                          always follow the latest trends and look for unconventional, creative solutions to problems. I
+                          have a high
+                          level of analytical skills and am able to effectively solve even the most difficult tasks
+                          encountered on the
+                          way.</li>
+                        <li>Able to work both independently and in a team. I can effectively cooperate with colleagues,
+                          exchanging ideas
+                          and finding optimal solutions. Professional maturity allows you to calmly cope with challenges
+                          and stressful
+                          situations, while maintaining a high quality of work. I am always looking for opportunities for
+                          self-improvement. I actively study new technologies and practices to stay abreast of the latest
+                          innovations. I
+                          have a strong understanding of various programming languages, frameworks and architectural
+                          concepts that allow
+                          me to create efficient and scalable software.</li>
+                      </ul>
+                    </div>
+  
+                    <div class="about-me">
+                      <div class="about-me-item">
+                        <div class="about-me-click" onclick="toggleAboutMe(this)">
+                          ROLE
+                          <span class="arrow-container-about-me ">
+                            <span class="arrow-about-me "></span>
+                          </span>
+                        </div>
+                        <div class="about-me-content">
+                          <ul class="about-me-list">
+                            <li>Frontend development</li>
+                            <li>Headless CMS, WordPress</li>
+                            <li>Blender (enjoy)</li>
+                          </ul>
+                        </div>
+                      </div>
+  
+                      <div class="about-me">
+                        <div class="about-me-item">
+                          <div class="about-me-click" onclick="toggleAboutMe(this)">
+                            EDUCATION
+                            <span class="arrow-container">
+                              <span class="arrow"></span>
+                            </span>
+                          </div>
+                          <div class="about-me-content">
+                            <ul class="about-me-list-education">
+                              <li>2018 - 2019: Frontend Development Diploma, GoIT
+                                School New York</li>
+                              <li>2019 - 2020: Advanced Web Development Certificate, GoIT School, New York</li>
+                              <li>2020 - 2022: Advanced Blender Animation Techniques, Udemy</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+            </section>
 
   <script type="module" src="./main.js"></script>
 </body>
